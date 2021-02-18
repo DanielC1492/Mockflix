@@ -34,7 +34,7 @@ const pintar = async(coleccionPintar) => {
     const divPelisDomElement = document.getElementById('contenedor');
     if (Array.isArray(coleccionPintar)) {
         coleccionPintar.forEach(pelicula => {
-            divPelisDomElement.innerHTML += `<div clas='col float-end img-peli'>
+            divPelisDomElement.innerHTML += `<div class='col float-end img-peli'>
         <img src='https://image.tmdb.org/t/p/w500${pelicula.poster_path}' width='200px' class='img-fluid float-end'></img></div><div clas='col text-peli'><h2>${pelicula.title}</h2><p>${pelicula.overview}</p></div>`
         });
     };
