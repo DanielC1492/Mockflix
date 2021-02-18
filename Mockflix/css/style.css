@@ -3,7 +3,12 @@
     padding: 0;
 }
 
+#contenedor {
+    border: solid 1em black;
+}
+
 body {
+    background-color: darkcyan;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,12 +22,13 @@ body {
     width: 50rem;
 }
 
-#showSelection {
+#peliculas {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     width: 50rem;
     background-color: gray;
+    border: solid 1em black;
 }
 
 .titlePicture {
